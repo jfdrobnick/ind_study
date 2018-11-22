@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jayd/u96_4bitcounter/u96_4bitcounter.srcs/sources_1/new/4bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module first_counter
+INFO: [VRFC 10-311] analyzing module first_counter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jayd/u96_4bitcounter/u96_4bitcounter.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 21 21:04:25 2018
+# Process ID: 14613
+# Current directory: /home/jayd/u96_4bitcounter/u96_4bitcounter.runs/synth_1
+# Command line: vivado -log first_counter_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source first_counter_tb.tcl
+# Log file: /home/jayd/u96_4bitcounter/u96_4bitcounter.runs/synth_1/first_counter_tb.vds
+# Journal file: /home/jayd/u96_4bitcounter/u96_4bitcounter.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source first_counter_tb.tcl -notrace
+Command: synth_design -top first_counter_tb -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14622 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1318.227 ; gain = 85.918 ; free physical = 9341 ; free virtual = 14519
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'first_counter_tb' [/home/jayd/u96_4bitcounter/u96_4bitcounter.srcs/sources_1/new/4bit_counter.v:50]
+WARNING: [Synth 8-85] always block has no event control specified [/home/jayd/u96_4bitcounter/u96_4bitcounter.srcs/sources_1/new/4bit_counter.v:71]
+INFO: [Synth 8-6157] synthesizing module 'first_counter' [/home/jayd/u96_4bitcounter/u96_4bitcounter.srcs/sources_1/new/4bit_counter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'first_counter' (1#1) [/home/jayd/u96_4bitcounter/u96_4bitcounter.srcs/sources_1/new/4bit_counter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'first_counter_tb' (2#1) [/home/jayd/u96_4bitcounter/u96_4bitcounter.srcs/sources_1/new/4bit_counter.v:50]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1362.852 ; gain = 130.543 ; free physical = 9354 ; free virtual = 14532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1362.852 ; gain = 130.543 ; free physical = 9354 ; free virtual = 14532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1370.855 ; gain = 138.547 ; free physical = 9354 ; free virtual = 14532
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1378.863 ; gain = 146.555 ; free physical = 9352 ; free virtual = 14530
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module first_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'first_counter_tb' to reference 'partition' which has no pins
+WARNING: [Synth 8-3330] design first_counter_tb has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.684 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2157.691 ; gain = 925.375 ; free physical = 8819 ; free virtual = 13998
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2157.691 ; gain = 937.918 ; free physical = 8792 ; free virtual = 13971
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/jayd/u96_4bitcounter/u96_4bitcounter.runs/synth_1/first_counter_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file first_counter_tb_utilization_synth.rpt -pb first_counter_tb_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2181.695 ; gain = 0.000 ; free physical = 8794 ; free virtual = 13973
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 21 21:04:52 2018...
